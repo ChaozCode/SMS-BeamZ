@@ -16,32 +16,85 @@ Build a cost-effective, developer-friendly SMS API that beats Twilio pricing whi
 
 ---
 
-## 📊 SMS MARKET RESEARCH (2025-2026)
+## 📊 SMS MARKET RESEARCH (2025-2026) - US & CANADA FOCUS
 
-### Competitive Pricing Analysis
+### 🏆 RECOMMENDED CARRIERS (Best Price + AI/API Success)
 
-| Provider | Price/SMS (US) | Bulk Rate | Notes |
-|----------|---------------|-----------|-------|
-| **Twilio** | $0.0079 | $0.0075 | Industry standard, expensive |
-| **Sinch** | $0.0078 | Custom | Good omnichannel |
-| **Telnyx** | $0.004 | $0.003 | Developer favorite |
-| **Plivo** | $0.005 | $0.004 | Good API docs |
-| **Vonage** | $0.0068 | Custom | Enterprise focused |
-| **MessageBird** | $0.006 | $0.005 | EU-focused |
-| **Textla** | $0.01 | $0.08 | Small business |
-| **ClickSend** | $0.006 | $0.005 | Competitive |
+#### Primary: **Telnyx** ⭐ (Best Overall for US/Canada)
+- **Base Rate**: $0.004/SMS + carrier fees
+- **Effective US Cost**: ~$0.007-0.008/SMS (includes AT&T $0.003, T-Mobile $0.0045, Verizon $0.004)
+- **Canada**: Bell, Telus, Rogers - competitive rates
+- **Why Telnyx**:
+  - ✅ Best developer experience (REST + WebSocket)
+  - ✅ Excellent AI/automation support
+  - ✅ Direct carrier connections
+  - ✅ Real-time delivery webhooks
+  - ✅ 10DLC pre-registered = no extra fees
+  - ✅ Volume discounts at 100M+ messages
 
-### BeamZ Target Pricing
-- **Standard**: $0.003/SMS (60% cheaper than Twilio)
-- **Bulk (10K+)**: $0.002/SMS
-- **Enterprise**: Custom pricing from $0.001/SMS
+#### Backup: **Bandwidth** (Direct Carrier - Enterprise)
+- **10DLC Rate**: $0.004/SMS + $0.015/MMS
+- **Toll-Free**: $0.007/SMS
+- **Short Code**: $0.008/SMS
+- **Why Bandwidth**:
+  - ✅ Direct-to-carrier (owns network)
+  - ✅ Powers Zoom, Microsoft, Google, RingCentral
+  - ✅ Best for high-volume enterprise
+  - ✅ No middleman markup
+
+#### Alternative: **Plivo** (Good API, Higher Cost)
+- **Base Rate**: $0.0055/SMS + carrier surcharges
+- **Effective Cost**: ~$0.0085-0.0105/SMS
+- **Carrier Fees**: AT&T $0.003, T-Mobile $0.0025, Verizon $0.005
+- **Why Consider**:
+  - ✅ Simple API, good docs
+  - ✅ Powerpack included (smart routing)
+  - ❌ Higher effective cost than Telnyx/Bandwidth
+
+### 💰 REAL COST COMPARISON (US 10DLC)
+
+| Provider | Base | + AT&T | + T-Mobile | + Verizon | Effective Avg |
+|----------|------|--------|------------|-----------|---------------|
+| **Telnyx** | $0.004 | $0.007 | $0.0085 | $0.008 | **$0.0075** |
+| **Bandwidth** | $0.004 | ~$0.007 | ~$0.008 | ~$0.008 | **$0.0075** |
+| **Plivo** | $0.0055 | $0.0085 | $0.008 | $0.0105 | **$0.009** |
+| **Twilio** | $0.0079 | $0.011 | $0.012 | $0.012 | **$0.012** |
+
+### 🇨🇦 CANADA PRICING
+
+| Provider | Bell/Virgin | Telus | Rogers | Effective |
+|----------|-------------|-------|--------|-----------|
+| **Telnyx** | $0.004 | $0.004 | $0.004 | **$0.004** (no carrier fees!) |
+| **Bandwidth** | Custom | Custom | Custom | ~$0.005-0.007 |
+| **Plivo** | $0.0143 | $0.0152 | $0.0155 | **$0.015** (expensive!) |
+
+### 🎯 BEAMZ STRATEGY
+
+**Primary Carrier**: Telnyx (US + Canada)
+- Best price-to-reliability ratio
+- Excellent API for AI integration
+- Direct carrier relationships
+- Auto-failover built-in
+
+**Failover Carrier**: Bandwidth
+- Enterprise-grade reliability
+- Direct network ownership
+- Use for high-priority messages
+
+**Pricing Tiers**:
+| Tier | Price/SMS | Margin | Target |
+|------|-----------|--------|--------|
+| Pay-as-you-go | $0.003 | ~60% | Developers |
+| Starter (10K+) | $0.0025 | ~65% | Startups |
+| Growth (100K+) | $0.002 | ~70% | Scale-ups |
+| Enterprise (1M+) | Custom | ~75% | Enterprise |
 
 ### Key Differentiators
-1. **Price Leadership**: Cheapest reliable SMS API
-2. **Developer Experience**: Simple REST API, great SDKs
-3. **Transparency**: No hidden fees, pay-as-you-go
-4. **Speed**: Sub-100ms delivery latency
-5. **Global Reach**: 200+ countries supported
+1. **Price Leadership**: 60% cheaper than Twilio
+2. **US + Canada Native**: Optimized for North America
+3. **AI-Friendly API**: Built for automation/AI workflows
+4. **Transparent Pricing**: No hidden carrier fees (we absorb them)
+5. **Smart Routing**: Auto-select cheapest carrier per destination
 
 ---
 
@@ -63,11 +116,12 @@ Build a cost-effective, developer-friendly SMS API that beats Twilio pricing whi
 │  ├─ Analytics Service (usage, costs, reports)               │
 │  └─ Billing Service (credits, invoices)                     │
 ├─────────────────────────────────────────────────────────────┤
-│  Carrier Aggregation Layer                                   │
-│  ├─ Telnyx (primary US)                                     │
-│  ├─ Plivo (backup US)                                       │
-│  ├─ Sinch (international)                                   │
-│  └─ Direct carrier connections (future)                     │
+│  Carrier Aggregation Layer (US/Canada Optimized)             │
+│  ├─ Telnyx (PRIMARY - US/Canada, best price)                │
+│  │   └─ $0.004 base + carrier fees, excellent AI/API        │
+│  ├─ Bandwidth (FAILOVER - direct carrier, enterprise)       │
+│  │   └─ $0.004 base, owns network, powers Zoom/Microsoft    │
+│  └─ Smart Router: Auto-select cheapest per destination      │
 ├─────────────────────────────────────────────────────────────┤
 │  Infrastructure                                              │
 │  ├─ PostgreSQL (messages, users, billing)                   │
